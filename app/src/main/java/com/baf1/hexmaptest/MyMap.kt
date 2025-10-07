@@ -19,7 +19,7 @@ import io.github.dellisd.spatialk.geojson.Position
 import com.baf1.hexmaptest.cells.CellFieldProvider
 
 @Composable
-fun AroundMap(
+fun MyMap(
     cellFieldProvider: CellFieldProvider,
     modifier: Modifier = Modifier,
     cameraState: CameraState = rememberCameraState(),

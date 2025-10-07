@@ -19,30 +19,10 @@ class MainActivity : ComponentActivity() {
 
         val h3 = H3Core.newSystemInstance()
         val cellFieldProvider = CellFieldProvider(h3)
-        cellFieldProvider.addCells(
-            listOf(
-                CellDTO(id = "8610c221fffffff"),
-                CellDTO(id = "8610c22f7ffffff"),
-                CellDTO(id = "8610c22afffffff"),
-                CellDTO(id = "8610c22d7ffffff"),
-                CellDTO(id = "8610c228fffffff"),
-                CellDTO(id = "8610c2287ffffff"),
-                CellDTO(id = "8610c22b7ffffff"),
-                CellDTO(id = "8610dc92fffffff"),
-                CellDTO(id = "8610dc927ffffff"),
-                CellDTO(id = "8610c229fffffff"),
-                CellDTO(id = "8610c2297ffffff"),
-                CellDTO(id = "8610dc907ffffff"),
-                CellDTO(id = "8610dc937ffffff"),
-                CellDTO(id = "8610c266fffffff"),
-                CellDTO(id = "8610dc917ffffff"),
-                CellDTO(id = "8610c264fffffff"),
-            )
-        )
         setContent {
             HexMapTestTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    AroundMap(
+                    MyMap(
                         cellFieldProvider = cellFieldProvider,
                         modifier = Modifier.padding(innerPadding)
                     )
